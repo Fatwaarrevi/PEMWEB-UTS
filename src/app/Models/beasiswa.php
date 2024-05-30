@@ -1,0 +1,22 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Model;
+
+
+class beasiswa extends Model
+{
+    use HasFactory;
+    protected $table = 'beasiswa';
+    protected $fillable = [
+        'nama',
+        'nomor_pendaftaran',
+        'email',
+        'program_studi',
+        'jenis_beasiswa',
+        'gelombang_penerimaan',
+        'status_beasiswa',
+    ];
+}
